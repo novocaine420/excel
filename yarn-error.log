@@ -1,21 +1,21 @@
 Arguments: 
-  /home/novac/.nvm/versions/node/v14.4.0/bin/node /usr/share/yarn/bin/yarn.js add normalize.css -D
+  /home/novac/.nvm/versions/node/v10.21.0/bin/node /usr/share/yarn/bin/yarn.js add @babel/plugin-proposal-class-properties -D
 
 PATH: 
-  /home/novac/.nvm/versions/node/v14.4.0/bin:/home/novac/.linuxbrew/bin:/home/novac/js_course/excel/node_modules/.bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/novac/Android/Sdk/emulator:/home/novac/Android/Sdk/tools:/home/novac/Android/Sdk/tools/bin:/home/novac/Android/Sdk/platform-tools:/home/novac/Android/Sdk/emulator:/home/novac/Android/Sdk/tools:/home/novac/Android/Sdk/tools/bin:/home/novac/Android/Sdk/platform-tools
+  /home/novac/.nvm/versions/node/v10.21.0/bin:/home/novac/.linuxbrew/bin:/home/novac/js_course/excel/node_modules/.bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/novac/Android/Sdk/emulator:/home/novac/Android/Sdk/tools:/home/novac/Android/Sdk/tools/bin:/home/novac/Android/Sdk/platform-tools:/home/novac/Android/Sdk/emulator:/home/novac/Android/Sdk/tools:/home/novac/Android/Sdk/tools/bin:/home/novac/Android/Sdk/platform-tools
 
 Yarn version: 
   1.22.4
 
 Node version: 
-  14.4.0
+  10.21.0
 
 Platform: 
   linux x64
 
 Trace: 
-  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
 
 npm manifest: 
   {
@@ -53,7 +53,9 @@ npm manifest:
     },
     "dependencies": {
       "@babel/polyfill": "^7.10.1",
-      "cross-env": "^7.0.2"
+      "cross-env": "^7.0.2",
+      "normalize.css": "^8.0.1",
+      "prettier": "^2.0.5"
     }
   }
 
@@ -4887,6 +4889,11 @@ Lockfile:
       query-string "^4.1.0"
       sort-keys "^1.0.0"
   
+  normalize.css@^8.0.1:
+    version "8.0.1"
+    resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+    integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
+  
   npm-run-path@^2.0.0:
     version "2.0.2"
     resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
@@ -5417,6 +5424,11 @@ Lockfile:
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
     integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
+  
+  prettier@^2.0.5:
+    version "2.0.5"
+    resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
+    integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
   
   pretty-error@^2.1.1:
     version "2.1.1"
